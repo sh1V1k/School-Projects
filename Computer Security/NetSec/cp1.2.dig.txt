@@ -1,0 +1,2 @@
+# Write your answer IP address on the next line (e.g., 1.2.3.4) dig smtp.bankofbailey.com
+10.4.22.106

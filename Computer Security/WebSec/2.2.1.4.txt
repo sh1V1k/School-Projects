@@ -1,0 +1,8 @@
+proj2_inject3
+8.0.39-0ubuntu0.20.04.1
+HINT, SECRET, foo, inject3_users
+tlzikpfnsa
+
+https://portswigger.net/web-security/sql-injection/union-attacks
+https://stackoverflow.com/questions/8987679/how-to-retrieve-the-current-version-of-a-mysql-database-management-system-dbms
+https://www.geeksforgeeks.org/get-names-table-sql/

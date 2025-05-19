@@ -1,0 +1,11 @@
+# Your answer MUST specify one IP address per line
+# For example:
+# 1.2.3.4
+# 127.0.0.1
+#
+# Write your answer starting from the next line
+10.4.22.48
+10.4.22.23
+10.4.22.215
+10.4.22.92
+10.4.22.1

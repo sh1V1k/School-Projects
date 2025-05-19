@@ -1,0 +1,13 @@
+{
+    "synth": {
+        "compile_ultra" : true,
+        "ungroup"       : true,
+        "gate_clock"    : true,
+        "min_power"     : false,
+<<<<<<< HEAD
+        "inc_iter"      : 10
+=======
+        "inc_iter"      : 0
+>>>>>>> afca87bfcbc203ffe79bc44ea0881a25e6bbe9dc
+    }
+}

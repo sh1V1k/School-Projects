@@ -1,0 +1,14 @@
+{signal:
+  [
+    {name: "clk"      , wave: "p.............."},
+    {name: "ufp_addr" , wave: "x5689x..895x6x.", data: ["A", "B", "C", "D", "E", "F", "G", "H"]},
+    {name: "ufp_wmask", wave: "0..890..890x0.."},
+    {name: "ufp_wdata", wave: "x..89x..89x....", data: ["M[C]", "M[D]", "M[E]", "M[F]"]},
+    {name: "ufp_rmask", wave: "0560......5x60."},
+    {name: "ufp_rdata", wave: "x.56x.......56x", data: ["M[A]", "M[B]", "M[G]", "M[H]"]},
+    {name: "ufp_resp" , wave: "0.1...0..1.01.0"},
+    {                   node: "...........XY.."}
+  ],
+  edge:["X+Y stall"],
+  config: { hscale: 1 }
+}

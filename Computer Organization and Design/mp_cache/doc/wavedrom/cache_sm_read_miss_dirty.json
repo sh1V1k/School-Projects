@@ -1,0 +1,17 @@
+{signal:
+  [
+    {name: "clk"       , wave: "p...|..|...."},
+    {name: "ufp_addr"  , wave: "x5..|..|...x", data: ["A", "B", "C"]},
+    {name: "ufp_rmask" , wave: "05..|..|...0"},
+    {name: "ufp_rdata" , wave: "x...|..|..5x", data: ["M[A]", "M[B]", "M[C]"]},
+    {name: "ufp_resp"  , wave: "0...|..|..10"},
+    {name: "state"     , wave: "2.22|.2|.222", data: ["idle", "hit", "writeback", "allocate", "idle", "hit", "idle"]},
+    {},
+    {name: "dfp_write" , wave: "0..1|.0|...."},
+    {name: "dfp_wdata" , wave: "x..8|.x|...."},
+    {name: "dfp_read"  , wave: "0...|.1|.0.."},
+    {name: "dfp_rdata" , wave: "x...|..|5x.."},
+    {name: "dfp_resp"  , wave: "0...|10|10.."}
+  ],
+  config: { hscale: 1 }
+}

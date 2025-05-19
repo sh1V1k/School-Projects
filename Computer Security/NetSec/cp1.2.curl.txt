@@ -1,0 +1,25 @@
+# Your answer MUST be a full unmodified HTTP response
+# For example:
+# HTTP/1.1 200 OK
+# Content-Length: 45
+# Content-Type: text/html
+# Date: Mon, 25 Feb 2019 17:21:24 GMT
+# Last-Modified: Mon, 11 Jun 2007 18:53:14 GMT
+#
+# <html><body>Foo</body></html>
+# curl -i http://www.bankofbailey.com
+# Give your answer HTTP response starting from the next line
+HTTP/1.1 200 OK
+Server: nginx/1.17.8
+Date: Mon, 18 Nov 2024 16:46:24 GMT
+Content-Type: text/html
+Content-Length: 45
+Last-Modified: Tue, 11 Feb 2020 18:07:23 GMT
+Connection: keep-alive
+ETag: "5e42ed5b-2d"
+Cache-Control: no-cache
+Set-Cookie: session=225YVEBN372W15OF
+Accept-Ranges: bytes
+
+<html><body><h1>It works!</h1></body></html>
+

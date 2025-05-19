@@ -1,0 +1,18 @@
+# Your answer MUST specify one IPAddress,port combination per line,
+# WITHOUT any extra spaces or angle brackets ('<', '>')
+#
+# For example:
+# 10.4.22.1,22
+# 10.4.22.4,80
+# 10.4.22.1,25
+# nmap -sS -p 1-1024 -v 10.4.22.0/24
+# Write your answer starting from the next line
+10.4.22.1,22
+10.4.22.23,80
+10.4.22.30,191
+10.4.22.92,53
+10.4.22.116,42
+10.4.22.116,584
+10.4.22.116,912
+10.4.22.215,22
+10.4.22.142,22

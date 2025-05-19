@@ -1,0 +1,8 @@
+# Your answer MUST specify one FQDN on one line and one IP address on another line
+# For example:
+# example.com.
+# 1.2.3.4
+#
+# Write your answer starting from the next line
+www.bankofbailey.com
+10.4.22.23

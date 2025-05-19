@@ -1,0 +1,5 @@
+Cite sources you conslulted for this MP here:
+https://stackoverflow.com/questions/2782229/most-lightweight-way-to-create-a-random-string-and-a-random-hexadecimal-number
+
+https://dev.mysql.com/doc/refman/8.4/en/string-literals.html
+

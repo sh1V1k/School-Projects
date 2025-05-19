@@ -1,0 +1,13 @@
+{signal:
+  [
+    {name: "clk"      , wave: "p.........."},
+    {name: "ufp_addr" , wave: "x5.6.7.x5.x", data: ["A", "B", "C", "D"]},
+    {name: "ufp_wmask", wave: "0.........."},
+    {name: "ufp_wdata", wave: "x.........."},
+    {name: "ufp_rmask", wave: "05.6.7.05.0"},
+    {name: "ufp_rdata", wave: "x.5x6x7x.5x", data: ["M[A]", "M[B]", "M[C]", "M[D]"]},
+    {name: "ufp_resp" , wave: "0.101010.10"},
+    {name: "state"    , wave: "2.222222.22", data: ["idle", "hit", "idle", "hit", "idle", "hit", "idle", "hit", "idle"]}
+  ],
+  config: { hscale: 1 }
+}

