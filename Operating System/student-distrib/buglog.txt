@@ -1,0 +1,44 @@
+3/15/24 - Infinite loop of errors
+    - used a while(1) in the interrupt handler.
+    
+3/15/24 - Text overriding text in middle of the screen
+    - Fix: added a clear();
+
+3/16/24 - Including Paging.S caused multiple definitions of 'enable_paging'
+    - Fix: Added a paging_asm.h with the paging_asm.S file which includes "extern void enable_paging();"
+
+3/16/24 - RTC interrupt and Keyboard Interrupt were not firing
+    - Fix: Had to change enable_irq() to mask bit to 0 instead of 1 because PIC is active low
+
+3/17/24 - Paging bootloop
+    - Fix: Order of 4mb, 4kb, and table struct bits were reversed. Future: Refer to intel guidelines :-)
+
+3/22/24 - File system not initilazed properly
+    - Fix: Fix the way we did pointer math by converting every address into a uint32_t
+
+3/22/24 - Directory read not finding the correct file
+    - Fix: Read dentry by index was doing the index in the inode array and not the directory entries array
+
+4/3/24 - Shell auto-new line happening late
+    - Fix: Decreased the buffer size threshold to force a new line.
+
+4/5/24 - Halt causing the user program to loop
+    - Fix: Execute was messing with the stack which caused the ebp in halt to return to weird places
+
+4/5/24 - Commands not being recognized
+    - Fix: clearing the buffer of the user programs in terminal read/write
+
+4/14/24 - Page faulting after running multiple commands 
+    - Fix: had to make sure character_count doesn't increment on null characters and also had to reset character_count to 0 after command done
+
+4/24/24 - Ctrl-L putc an l
+    - Fix: Simple if-else logic
+
+4/25/24 - Cat verylargetextwithverylargefont.tx incorrect new-lines
+    - Fix: Changed logic in new-line in edgecase where a new line is being printed as the last char for a given row (is last col)
+
+4/26/24 - Fish printing on active screen
+    - Fix: Link a fish vidmem to maintain the fish only on the screen of the process that called fish. 
+
+4/27/24 - Ctrl-L clears random screen
+    - Fix: Clear current physical screen instead of current process
